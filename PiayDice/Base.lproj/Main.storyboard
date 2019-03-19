@@ -57,10 +57,13 @@
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0VS-QD-SPR"/>
-                                    <constraint firstAttribute="width" constant="192" id="N3T-Me-Y2P"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="N3T-Me-Y2P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Ramdom Dice"/>
+                                <connections>
+                                    <action selector="ramdomDiceButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbd-Mq-beG"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yi8-xf-0Fp">
                                 <rect key="frame" x="132" y="68" width="150" height="150"/>
@@ -95,6 +98,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="FirstDicelmageView" destination="BPw-VT-l9j" id="qt3-vx-bNk"/>
+                        <outlet property="secondDicelmageView" destination="qHV-Yz-SKU" id="eMq-If-Lwz"/>
+                        <outlet property="thirDicelmageView" destination="aDy-gt-eJP" id="ihp-pD-Tpc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
