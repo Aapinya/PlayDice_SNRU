@@ -100,7 +100,7 @@
                     </view>
                     <connections>
                         <outlet property="FirstDicelmageView" destination="BPw-VT-l9j" id="qt3-vx-bNk"/>
-                        <outlet property="secondDicelmageView" destination="qHV-Yz-SKU" id="eMq-If-Lwz"/>
+                        <outlet property="secondDicelmageView" destination="hJo-Ky-O1H" id="Juy-q5-sYz"/>
                         <outlet property="thirDicelmageView" destination="aDy-gt-eJP" id="ihp-pD-Tpc"/>
                     </connections>
                 </viewController>

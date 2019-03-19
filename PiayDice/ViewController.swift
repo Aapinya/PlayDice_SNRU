@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-   
-    @IBOutlet weak var FirstDicelmageView: UIImageView!
+   //   Explicit
+    var sourceDices = ["Dice1","Dice2","Dice3","Dice4","Dice5","Dice6"]
     
-    @IBOutlet weak var secondDicelmageView: NSLayoutConstraint!
+    
+    @IBOutlet weak var FirstDicelmageView: UIImageView!
+    @IBOutlet weak var secondDicelmageView: UIImageView!
     @IBOutlet weak var thirDicelmageView: UIImageView!
     
     
@@ -25,6 +27,21 @@ class ViewController: UIViewController {
 
     @IBAction func ramdomDiceButtom(_ sender: UIButton) {
     print("You Click Ramdom")
+     
+//        for Dice1
+        let indexDice1: Int = Int.random(in: 0 ... 5)
+        FirstDicelmageView.image = UIImage(named: sourceDices[indexDice1])
+        
+//        for Dice2
+        let indexDice2:Int = Int.random(in: 0 ... 5)
+        secondDicelmageView.image = UIImage(named: sourceDices[indexDice2])
+        
+//        for Dice3
+        let indexDice3:Int = Int.random(in: 0 ... 5)
+        thirDicelmageView.image = UIImage(named: sourceDices[indexDice3])
+        
+        
+        
         
  } // ramdomDice
     
